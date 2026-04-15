@@ -1,15 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
+{% load static %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+{% block title %} Animales Felices - Inicio {% endblock %}
 
-<body>
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/index_styles.css' %}">
+{% endblock %}
 
-    
-</body>
+{% block content %}
 
-</html>
+<div class="hero-section">
+    <h1 class="hero-title">Bienvenido a Vet Animales Felices</h1>
+    <img src="{% static 'gifs/index.gif' %}" alt="GIF animado" class="hero-image">
+</div>
+
+{% endblock %}
